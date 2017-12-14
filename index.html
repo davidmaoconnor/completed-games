@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finished Games</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average|Fjalla+One" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="images/brand-image.png" height="20px">
+                </a>
+                <a class="navbar-brand" href="#">
+                  Completed Games
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- <ul class="nav navbar-nav">
+                    <li><a href="#">About <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul> -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <!-- <h1>Completed Games</h1> -->
+        <p class="lead">Make a list of your completed video games.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Add a game
+                    </div>
+                    <div class="panel-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="gameTitle">
+                                    Title
+                                </label>
+                                <input type="text" class="form-control" value="Grand Theft Auto V" id="gameTitle">
+                            </div>
+                            <div class="form-group">
+                                <label for="platform">
+                                    Platform
+                                </label>
+                                <select id='platform'>
+                                    <!--Supplement an id here instead of using 'name'-->
+                                    <option value="PC">PC</option>
+                                    <option value="Nintedo Switch">Nintedo Switch</option>
+                                    <option value="Playstation 4">Playstation 4</option>
+                                    <option value="Xbox One">Xbox One</option>
+                                    <option value="Nintendo 3DS">Nintendo 3DS</option>
+                                    <option value="Playstation Vita">Playstation Vita</option>
+                                    <option value="Playstation 2">Playstation 2</option>
+                                    <option value="Nintendo DS">Nintendo DS</option>
+                                    <option value="Game Boy / Game Boy Color">Game Boy / Game Boy Color</option>
+                                    <option value="Playstation">Playstation</option>
+                                    <option value="Wii">Wii</option>
+                                    <option value="Xbox 360">Xbox 360</option>
+                                    <option value="Playstation 3">Playstation 3</option>
+                                    <option value="Game Boy Advance">Game Boy Advance</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateFinished">
+                                    Date Finished
+                                </label>
+                                <input type="date" class="form-control" id="dateFinished">
+                            </div>
+                            <label for="completionTime">
+                                Time to Complete
+                            </label>
+                            <div class="form-group">
+                                <label for="hours"><small>
+                                    Hours
+                                </small></label>
+                                <input type="number" min="0" class="form-control" id="hours">
+                            </div>
+                            <div class="form-group">
+                                <label for="minutes"><small>
+                                    Minutes
+                                </small></label>
+                                <input type="number" min="0" class="form-control" id="minutes">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button type="button" id="updateButton" class="btn btn-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h2>Games List</h2>
+                <table id="table" class="table table-bordered table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th>Game Title</th>
+                            <th>Platform</th>
+                            <th>Date Finished</th>
+                            <th>Time to Complete</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

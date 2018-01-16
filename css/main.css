@@ -7,15 +7,6 @@ h1, h2 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
-.panel-primary>.panel-heading {
-	background: #77F456;
-}
-
 .panel-primary {
     border-color: #777;
-}
-
-.btn-primary {
-	background: #77F456;
-	border-color: #77F456;
 }
